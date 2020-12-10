@@ -1,0 +1,28 @@
+script: train.py
+arguments: [--input_data, $AZUREML_DATAREFERENCE_inputData, --output_data, $AZUREML_DATAREFERENCE_outputData]
+target: cpu-cluster
+framework: Python
+communicator: None
+nodeCount: 1
+environment:
+  python:
+    userManagedDependencies: false
+    interpreterPath: python
+    condaDependenciesFile: aml_config/train-conda.yml
+  docker:
+    enabled: true
+    baseImage: mcr.microsoft.com/azureml/base:intelmpi2018.3-ubuntu16.04
+    arguments: []
+mpi:
+    processCountPerNode: 1
+dataReferences:
+  inputData:
+    dataStoreName: workspaceblobstore
+    pathOnDataStore: training_data/
+    mode: mount
+    overwrite: false
+  outputData:
+    dataStoreName: workspaceblobstore
+    pathOnDataStore: training_ouptut_data/
+    mode: mount
+    overwrite: false    
