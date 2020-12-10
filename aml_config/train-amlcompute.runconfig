@@ -1,5 +1,5 @@
 script: train.py
-arguments: [--input_data, $AZUREML_DATAREFERENCE_inputData, --output_data, $AZUREML_DATAREFERENCE_outputData]
+arguments: [--input_data_path, $AZUREML_DATAREFERENCE_inputData, --output_data_path, $AZUREML_DATAREFERENCE_outputData]
 target: cpu-cluster
 framework: Python
 communicator: None
@@ -22,7 +22,7 @@ dataReferences:
     mode: mount
     overwrite: false
   outputData:
-    dataStoreName: workspaceblobstore
-    pathOnDataStore: training_ouptut_data/
+    dataStoreName: output
+    pathOnDataStore: /
     mode: mount
     overwrite: false    
