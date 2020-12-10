@@ -14,10 +14,10 @@ def getRuntimeArgs():
 def main():
     args = getRuntimeArgs()
 
-    # Read data into pandas dataframe from input_data argument location
+    # Read data into pandas dataframe from input_data_path argument location
     input_df = pd.read_csv(os.path.join(args.input_data_path, 'german_credit_data.csv'))
     
-    # Write pandas dataframe to output_data argument location
+    # Write pandas dataframe to output_data_path argument location
     input_df.to_csv(os.path.join(args.output_data_path, 'output_german_credit_data.csv'))
 
 if __name__ == "__main__":
