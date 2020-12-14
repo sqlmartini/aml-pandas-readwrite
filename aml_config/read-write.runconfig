@@ -1,5 +1,8 @@
-script: train.py
-arguments: [--input_data_path, $AZUREML_DATAREFERENCE_inputData, --output_data_path, $AZUREML_DATAREFERENCE_outputData]
+script: read-write.py
+arguments: [
+    --input_data_path, $AZUREML_DATAREFERENCE_inputData, 
+    --output_data_path, $AZUREML_DATAREFERENCE_outputData
+    ]
 target: cpu-cluster
 framework: Python
 communicator: None
@@ -8,7 +11,7 @@ environment:
   python:
     userManagedDependencies: false
     interpreterPath: python
-    condaDependenciesFile: aml_config/train-conda.yml
+    condaDependenciesFile: aml_config/conda.yml
   docker:
     enabled: true
     baseImage: mcr.microsoft.com/azureml/base:intelmpi2018.3-ubuntu16.04
@@ -23,6 +26,6 @@ dataReferences:
     overwrite: false
   outputData:
     dataStoreName: output
-    pathOnDataStore: /
+    pathOnDataStore: /test/ 
     mode: mount
     overwrite: false    
