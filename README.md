@@ -19,7 +19,7 @@ This repo also shows how to parameterize different properties such as the input 
 2.  From the left-hand navigation click `Notebooks`
 3.  Click the `Open terminal` icon to open a terminal on the Compute Instance
 
-![alt text](./media/open-terminal.png "Open terminal")
+![alt text](media/open-terminal.png "Open terminal")
 
 4.  From the terminal, clone the repo to the remote file share storage for the AML Workspace
 
