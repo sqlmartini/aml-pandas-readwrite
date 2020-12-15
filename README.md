@@ -26,7 +26,7 @@ This repo also shows how to parameterize different properties such as the input 
     ```
     git clone https://github.com/sqlmartini/aml-read-write.git
     ```
-5.  Upload [sample data file](/german_credit_data.csv) to default AML datastore using Azure Storage Explorer in a virtual folder `training_data`
+5.  Upload [sample data file](sample-data/german_credit_data.csv) to default AML datastore using Azure Storage Explorer in a virtual folder `training_data`
     * First, create a new virtual directory
     * Next, upload the sample data file `german_credit_data.csv`
     * Refer to the screenshots below for details:
