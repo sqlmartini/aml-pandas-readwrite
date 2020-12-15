@@ -37,14 +37,14 @@ This repo also shows how to parameterize different properties such as the input 
 
 ![alt text](media/upload-sample-data.PNG "Upload sample data file")
 
-6.  Review `read-write.py`
+6.  Review [read-write.py](/read-write.py)
     * The `input_data_path` argument is the path to where the input data files are to be read in
     * The `output_data_path` argument is the path to where the output file is to written to
     * The sample csv file is read into a pandas dataframe from the `input_data_path` argument
     * The `output_data_path` directory is created if it doesn't already exist
     * The pandas dataframe is written in csv format to the `output_data_path`
 
-6.  Review `aml_confgi/read-write.runconfig` YAML file
+6.  Review [aml_config/read-write.runconfig](/aml_config/read-write.runconfig)
     * Notice the arguments `input_data_path` and `output_data_path` on lines 3 and 4 which match the argument names in `read-write.py`
     * The values passed to the arguments are [AML data references](https://docs.microsoft.com/en-us/python/api/azureml-core/azureml.data.data_reference.datareference?view=azure-ml-py) which represent a path to an AML datastore.  
     * Change the `target` property on line 6 to match the name of your compute cluster
