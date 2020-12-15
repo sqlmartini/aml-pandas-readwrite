@@ -50,7 +50,7 @@ This repo also shows how to parameterize different properties such as the input 
     * Change the `target` property on line 6 to match the name of your compute cluster
     * The `inputData` data reference is defined on lines 22-26.
     * The `outputData` data reference is defined on lines 28-31.  
-    * **Note:** while the `dataStoreName` is the same as the inputData data reference, it could be a different storage account altogether.  You would just need to [register that datastore in AML](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-access-data#create-and-register-datastores)
+    * **Note:** while the `dataStoreName` is the same for the inputData and outputData data references, they could be different storage accounts altogether.  You would just need to [register that datastores in AML](https://docs.microsoft.com/en-us/azure/machine-learning/how-to-access-data#create-and-register-datastores)
     * **Note:** data reference names cannot have underscores or dashes
 
 7.  Use the AML CLI to submit an experiment that executes `read-write.py` from the `read-write.runconfig` YAML run configuration
