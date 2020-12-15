@@ -19,7 +19,7 @@ This repo also shows how to parameterize different properties such as the input 
 2.  From the left-hand navigation click `Notebooks`
 3.  Click the `Open terminal` icon to open a terminal on the Compute Instance
 
-![alt text](media/open-terminal.png "Open terminal")
+![alt text](media/open-terminal.PNG "Open terminal")
 
 4.  From the terminal, clone the repo to the remote file share storage for the AML Workspace
 
@@ -31,11 +31,11 @@ This repo also shows how to parameterize different properties such as the input 
     * Next, upload the sample data file `german_credit_data.csv`
     * Refer to the screenshots below for details:
 
-![alt text](./media/create-virtual-directory.png "Create virtual directory")
+![alt text](media/create-virtual-directory.PNG "Create virtual directory")
 
     
 
-![alt text](./media/upload-sample-data.png "Upload sample data file")
+![alt text](media/upload-sample-data.PNG "Upload sample data file")
 
 6.  Review `read-write.py`
     * The `input_data_path` argument is the path to where the input data files are to be read in
