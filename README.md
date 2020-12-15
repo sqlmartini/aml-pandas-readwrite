@@ -4,7 +4,7 @@ This repo is meant to address the common client question "How can I read and wri
 
 While there different approaches to accomplish this, this repo showcases a simple solution using AML datastores and data references.  
 
-This repo also shows how to parameterize different properties such as the input data path and output data path and utilize the AML CLI to incorporate into an MLOps process.
+This repo also shows how to parameterize different properties such as the input data path and output data path and utilize the AML CLI which could be incorporated into an MLOps process.
 
 ## Pre-requisites
 
