@@ -25,7 +25,7 @@ dataReferences:
     mode: mount
     overwrite: false
   outputData:
-    dataStoreName: output
-    pathOnDataStore: /test/ 
+    dataStoreName: workspaceblobstore
+    pathOnDataStore: output/ 
     mode: mount
     overwrite: false    
